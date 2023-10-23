@@ -1,10 +1,12 @@
 # dmg-technical-assignment
-# Instructions:
+## Instructions:
 
-######  ******* DB First *******
+######  DB First
       docker-compose up -d db
-######  ******* Backend Second *******
+######  Backend Second
      docker-compose up -d --build backend
-######  ******* UI Last *******
+######  UI Last
       docker-compose up -d --build ui
 
+######  Notes
+-CRUD Operations are avaialable for all logged in users under the assumption that they are admins
