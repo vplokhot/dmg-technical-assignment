@@ -10,17 +10,17 @@ export const UserProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
   const login = (userData) => {
-    localStorage.setItem("token", {
+    localStorage.setItem("vptoken", {
       token: userData.token,
       user: userData.username,
     });
-    localStorage.setItem("token", JSON.stringify(userData));
+    localStorage.setItem("vptoken", JSON.stringify(userData));
 
     setUser(userData);
   };
 
   const logout = () => {
-    localStorage.removeItem("token");
+    localStorage.removeItem("vptoken");
     setUser(null);
   };
 

@@ -10,7 +10,7 @@ function App() {
   const { login } = useUser();
 
   useEffect(() => {
-    const userData = JSON.parse(localStorage.getItem("token"));
+    const userData = JSON.parse(localStorage.getItem("vptoken"));
 
     if (userData) {
       login(userData);
